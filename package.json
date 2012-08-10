@@ -1,0 +1,39 @@
+{
+    "name" : "split-css",
+    "version" : "0.0.0",
+    "description" : "split css files into arrays that you can use to set prefixes",
+    "main" : "index.js",
+    "bin" : {
+        "split-css": "bin/cmd.js"
+    },
+    "directories" : {
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {
+        "cssp" : "~1.0.6",
+        "concat-map" : "~0.0.0"
+    },
+    "devDependencies" : {
+        "tap" : "~0.3.0"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/split-css.git"
+    },
+    "homepage" : "https://github.com/substack/split-css",
+    "keywords" : [
+        "css",
+        "prefix"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT",
+    "engine" : { "node" : ">=0.6" }
+}

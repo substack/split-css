@@ -2,6 +2,8 @@
 
 Split css files into arrays that you can use to set prefixes.
 
+[![build status](https://secure.travis-ci.org/substack/split-css.png)](http://travis-ci.org/substack/split-css)
+
 # exposition
 
 By splitting a css file in just the right places:

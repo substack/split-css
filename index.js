@@ -39,8 +39,11 @@ function chunkSelector (node) {
 
 function chunkSimpleSelector (node) {
     if (node[0] === 'clazz' && node[1][0] === 'ident') {
-        var s = stringify([ node[0], [ 'ident', '' ] ]);
+        var s = stringify([ 'clazz', [ 'ident', '' ] ]);
         return [ s, node[1][1] ];
+    }
+    else if (node[0] === 'shash') {
+        return [ stringify([ 'shash', '' ]), node[1] ];
     }
     else {
         return stringify(node);
